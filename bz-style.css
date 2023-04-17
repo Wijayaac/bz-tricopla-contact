@@ -1,0 +1,124 @@
+:root {
+    --wpforms-field-border-radius: 3px;
+    --wpforms-field-background-color: #ffffff;
+    --wpforms-field-border-color: rgba(0, 0, 0, 0.25);
+    --wpforms-field-text-color: rgba(0, 0, 0, 0.7);
+    --wpforms-label-color: rgba(0, 0, 0, 0.85);
+    --wpforms-label-sublabel-color: rgba(0, 0, 0, 0.55);
+    --wpforms-label-error-color: #d63637;
+    --wpforms-button-border-radius: 3px;
+    --wpforms-button-background-color: #066aab;
+    --wpforms-button-text-color: #ffffff;
+    --wpforms-field-size-input-height: 43px;
+    --wpforms-field-size-input-spacing: 15px;
+    --wpforms-field-size-font-size: 16px;
+    --wpforms-field-size-line-height: 19px;
+    --wpforms-field-size-padding-h: 14px;
+    --wpforms-field-size-checkbox-size: 16px;
+    --wpforms-field-size-sublabel-spacing: 5px;
+    --wpforms-field-size-icon-size: 1;
+    --wpforms-label-size-font-size: 16px;
+    --wpforms-label-size-line-height: 19px;
+    --wpforms-label-size-sublabel-font-size: 14px;
+    --wpforms-label-size-sublabel-line-height: 17px;
+    --wpforms-button-size-font-size: 17px;
+    --wpforms-button-size-height: 41px;
+    --wpforms-button-size-padding-h: 15px;
+    --wpforms-button-size-margin-top: 10px;
+}
+
+
+/* Custom css */
+div.bz-contact .wpforms-field {
+    --wpforms-button-background-color: #E21D34;
+    overflow: hidden;
+    padding: 0;
+    margin-bottom: 12px;
+
+}
+
+div.bz-contact .wpforms-field input {
+    min-height: 60px;
+}
+
+div.bz-contact .wpforms-field textarea {
+    min-height: 180px;
+}
+
+div.bz-contact .wpforms-field input:focus {
+    border: none;
+    box-shadow: none;
+}
+
+div.bz-contact .wpforms-field input,
+div.bz-contact .wpforms-field textarea {
+    --wpforms-field-size-padding-h: 30px;
+    padding-left: 25px;
+    background-color: #F5F3F3;
+    border: none;
+    box-shadow: none;
+    border-radius: 25px;
+}
+
+div.bz-contact .wpforms-field label {
+    font-size: 14px;
+    font-weight: 400;
+    font-style: italic;
+    opacity: 0.5;
+    position: absolute;
+    top: 30px;
+    left: 25px;
+    transform: translateY(-50%);
+    pointer-events: none;
+    transition: all 0.2s ease-in-out;
+}
+
+/* Add styles for active and filled state */
+div.bz-contact .wpforms-field.active label,
+div.bz-contact .wpforms-field.focus label {
+    top: 15px;
+}
+
+div.bz-contact .wpforms-field:focus-within label {
+    color: #E21D34;
+}
+
+div.bz-contact button.wpforms-submit {
+    --wpforms-button-background-color: #E21D34;
+    --wpforms-button-border-radius: 25px;
+    padding: 10px 22px 7px 22px;
+    font-size: 15px;
+    line-height: 23px;
+}
+
+@media screen and (min-width: 992px) {
+    div.bz-contact .wpforms-field input {
+        height: 95px;
+    }
+
+    div.bz-contact .wpforms-field textarea {
+        min-height: 280px;
+    }
+
+    div.bz-contact .wpforms-field input,
+    div.bz-contact .wpforms-field textarea {
+        --wpforms-field-size-padding-h: 30px;
+        padding-left: 60px;
+        border-radius: 25px;
+    }
+
+    div.bz-contact .wpforms-field label {
+        font-size: 20px;
+        line-height: 30px;
+        top: 45px;
+        left: 60px;
+    }
+
+    /* Add styles for active and filled state */
+    div.bz-contact .wpforms-field.active label,
+    div.bz-contact .wpforms-field.focus label {
+        top: 20px;
+        font-size: 15px;
+        left: 60px;
+    }
+}
